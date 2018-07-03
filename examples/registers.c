@@ -21,8 +21,8 @@ int main(void)
     SYNCCOM_REGISTERS_INIT(regs);
 
     /* Mark the CCR0 and CCR1 elements to retrieve values */
-    regs.CCR1 = synccom_UPDATE_VALUE;
-    regs.CCR2 = synccom_UPDATE_VALUE;
+    regs.CCR1 = SYNCCOM_UPDATE_VALUE;
+    regs.CCR2 = SYNCCOM_UPDATE_VALUE;
 
     /* Get the CCR1 and CCR2 register values */
     synccom_get_registers(h, &regs);
